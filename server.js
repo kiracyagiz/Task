@@ -4,7 +4,10 @@ const PORT = process.env.PORT || 3000
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') return respondHello(req, res)
+<<<<<<< HEAD
   if (req.url === '/user-agent') return respondUserAgent(req, res)
+=======
+>>>>>>> ffdbea6 (fiat lux)
   if (req.url.match(/^\/b64\//)) return respondBase64(req, res)
 
   res.end()
